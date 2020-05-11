@@ -1,0 +1,16 @@
+<h1>New Game</h1>
+<ul class="letter-array">
+  <% @game_board.each do |piece| %>
+  <li><%= piece %></li>
+  <% end %>
+</ul>
+
+
+<form action="score" method='post'>
+  <label for="guess">Write the longest word you can make here:</label>
+  <input class ="input" type="text" name="guess" placeholder="word">
+  <input class ="button" type="submit" value="Submit">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :game_board, @game_board %>
+</form>
+

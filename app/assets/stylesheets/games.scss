@@ -1,0 +1,33 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.letter-array {
+  li{
+    display: inline;
+    background: #3498DB;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 20px;
+    margin: 8px;
+    padding: 8px 10px;
+    text-align: center;
+  }
+}
+
+.input {
+  width: 300px;
+}
+
+.button {
+  background: #3498DB;
+  color: white;
+  border-radius: 3px;
+  font-style: italic;
+
+}
+
+label {
+  display:block;
+}
